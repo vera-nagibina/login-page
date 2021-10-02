@@ -1,0 +1,38 @@
+[
+    {
+        "date": "01.07.21 15:36",
+        "from": "Москва",
+        "where": "Екатеринбург",
+        "passengersCount": 2,
+        "purposeOfTrip": "Отдых"
+    },
+    {
+        "date": "12.05.21 07:12",
+        "from": "Курск",
+        "where": "Самара",
+        "passengersCount": 4,
+        "purposeOfTrip": "Работа"
+    },
+    {
+        "date": "05.12.20 12:45",
+        "from": "Москва",
+        "where": "Калуга",
+        "passengersCount": 5,
+        "purposeOfTrip": "Работа"
+    },
+    {
+        "date": "28.02.21 11:58",
+        "from": "Самара",
+        "where": "Калуга",
+        "passengersCount": 1,
+        "purposeOfTrip": "Отдых"
+    },
+    {
+        "date": "04.03.21 09:14",
+        "from": "Москва",
+        "where": "Курск",
+        "passengersCount": 3,
+        "purposeOfTrip": "Работа"
+    }
+]
+  
