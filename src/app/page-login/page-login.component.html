@@ -1,0 +1,29 @@
+<div class="container">
+<form class="card" [formGroup]="form" (ngSubmit)="submit()"> 
+    <div class="header">
+        <span class="auth">АВТОРИЗАЦИЯ</span>
+    </div>
+    <div class="control">
+        <app-login></app-login>
+        <input id="login" autocomplete="off" class="login" placeholder="Логин" formControlName="login">
+    </div>
+    
+    <div class="control">
+        <app-password></app-password>
+        <input id="password" [type]="textType" class="password" placeholder="Пароль" formControlName="password"> 
+        <div>
+            <app-close *ngIf="!condition" (click)="changeView()"></app-close>
+            <app-open *ngIf="condition" (click)="changeView()"></app-open>
+        </div>
+    </div>
+    
+    <button type="button"  class="submit"
+    [disabled]="form.invalid"
+    [ngClass]="{valid: form.valid}"
+    (click)="submit()">
+    ВОЙТИ
+    </button>
+    <span class="error" *ngIf="isError">Неверный логин или пароль</span>
+
+</form>
+</div>

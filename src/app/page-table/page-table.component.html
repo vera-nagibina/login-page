@@ -1,0 +1,32 @@
+<div class="container">
+<div class="menu">
+    <div class="exit">
+        <app-exit (click)="logout()"></app-exit>
+    </div>
+</div>
+<span class="hello">Hello, world</span>
+<div class="row">
+    <div class="cell">
+        <span class="text">Дата</span>
+    </div>
+    <div class="cell">
+        <span class="text">Откуда</span>
+    </div>
+    <div class="cell">
+        <span class="text">Куда</span>
+    </div>
+    <div class="cell">
+        <span class="text">Кол-во пассажиров</span>
+    </div>
+    <div class="cell">
+        <span class="text">Цель поездки</span>
+    </div>
+</div>
+<div class="cardContainer">
+    <app-card *ngFor="let iterCard of data; let i = index" 
+    [data]='iterCard'
+    [ngClass]="{'even': i % 2 == 1}">
+    </app-card>
+    
+</div>    
+</div>

@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.cell {
+    width: 220px;
+    height: 70px;
+
+    border: 1px solid rgb(26, 25, 25);
+
+    margin: -1px 0px 0px -1px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    font-family: Tahoma;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: currentColor;
+}
